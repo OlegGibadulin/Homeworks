@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AFB64111307EBFB2000474D3 /* CopyFiles */ = {
+		AFB64124307EC60E000474D3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -19,11 +19,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AFB64113307EBFB2000474D3 /* hw1_task_manager_core */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hw1_task_manager_core; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB64126307EC60E000474D3 /* hw1_task_manager_core */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hw1_task_manager_core; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		AFB64115307EBFB2000474D3 /* hw1_task_manager_core */ = {
+		AFB64128307EC60E000474D3 /* hw1_task_manager_core */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = hw1_task_manager_core;
 			sourceTree = "<group>";
@@ -31,7 +31,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AFB64110307EBFB2000474D3 /* Frameworks */ = {
+		AFB64123307EC60E000474D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,18 +41,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AFB6410A307EBFB2000474D3 = {
+		AFB6411D307EC60E000474D3 = {
 			isa = PBXGroup;
 			children = (
-				AFB64115307EBFB2000474D3 /* hw1_task_manager_core */,
-				AFB64114307EBFB2000474D3 /* Products */,
+				AFB64128307EC60E000474D3 /* hw1_task_manager_core */,
+				AFB64127307EC60E000474D3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AFB64114307EBFB2000474D3 /* Products */ = {
+		AFB64127307EC60E000474D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFB64113307EBFB2000474D3 /* hw1_task_manager_core */,
+				AFB64126307EC60E000474D3 /* hw1_task_manager_core */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,64 +60,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AFB64112307EBFB2000474D3 /* hw1_task_manager_core */ = {
+		AFB64125307EC60E000474D3 /* hw1_task_manager_core */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFB6411A307EBFB2000474D3 /* Build configuration list for PBXNativeTarget "hw1_task_manager_core" */;
+			buildConfigurationList = AFB6412D307EC60E000474D3 /* Build configuration list for PBXNativeTarget "hw1_task_manager_core" */;
 			buildPhases = (
-				AFB6410F307EBFB2000474D3 /* Sources */,
-				AFB64110307EBFB2000474D3 /* Frameworks */,
-				AFB64111307EBFB2000474D3 /* CopyFiles */,
+				AFB64122307EC60E000474D3 /* Sources */,
+				AFB64123307EC60E000474D3 /* Frameworks */,
+				AFB64124307EC60E000474D3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				AFB64115307EBFB2000474D3 /* hw1_task_manager_core */,
+				AFB64128307EC60E000474D3 /* hw1_task_manager_core */,
 			);
 			name = hw1_task_manager_core;
 			packageProductDependencies = (
 			);
 			productName = hw1_task_manager_core;
-			productReference = AFB64113307EBFB2000474D3 /* hw1_task_manager_core */;
+			productReference = AFB64126307EC60E000474D3 /* hw1_task_manager_core */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AFB6410B307EBFB2000474D3 /* Project object */ = {
+		AFB6411E307EC60E000474D3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 2660;
 				TargetAttributes = {
-					AFB64112307EBFB2000474D3 = {
+					AFB64125307EC60E000474D3 = {
 						CreatedOnToolsVersion = 26.6;
 					};
 				};
 			};
-			buildConfigurationList = AFB6410E307EBFB2000474D3 /* Build configuration list for PBXProject "hw1_task_manager_core" */;
+			buildConfigurationList = AFB64121307EC60E000474D3 /* Build configuration list for PBXProject "hw1_task_manager_core" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = AFB6410A307EBFB2000474D3;
+			mainGroup = AFB6411D307EC60E000474D3;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = AFB64114307EBFB2000474D3 /* Products */;
+			productRefGroup = AFB64127307EC60E000474D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFB64112307EBFB2000474D3 /* hw1_task_manager_core */,
+				AFB64125307EC60E000474D3 /* hw1_task_manager_core */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AFB6410F307EBFB2000474D3 /* Sources */ = {
+		AFB64122307EC60E000474D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -127,7 +127,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AFB64118307EBFB2000474D3 /* Debug */ = {
+		AFB6412B307EC60E000474D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +190,7 @@
 			};
 			name = Debug;
 		};
-		AFB64119307EBFB2000474D3 /* Release */ = {
+		AFB6412C307EC60E000474D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,7 +245,7 @@
 			};
 			name = Release;
 		};
-		AFB6411B307EBFB2000474D3 /* Debug */ = {
+		AFB6412E307EC60E000474D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -256,7 +256,7 @@
 			};
 			name = Debug;
 		};
-		AFB6411C307EBFB2000474D3 /* Release */ = {
+		AFB6412F307EC60E000474D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -270,25 +270,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFB6410E307EBFB2000474D3 /* Build configuration list for PBXProject "hw1_task_manager_core" */ = {
+		AFB64121307EC60E000474D3 /* Build configuration list for PBXProject "hw1_task_manager_core" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFB64118307EBFB2000474D3 /* Debug */,
-				AFB64119307EBFB2000474D3 /* Release */,
+				AFB6412B307EC60E000474D3 /* Debug */,
+				AFB6412C307EC60E000474D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFB6411A307EBFB2000474D3 /* Build configuration list for PBXNativeTarget "hw1_task_manager_core" */ = {
+		AFB6412D307EC60E000474D3 /* Build configuration list for PBXNativeTarget "hw1_task_manager_core" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFB6411B307EBFB2000474D3 /* Debug */,
-				AFB6411C307EBFB2000474D3 /* Release */,
+				AFB6412E307EC60E000474D3 /* Debug */,
+				AFB6412F307EC60E000474D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AFB6410B307EBFB2000474D3 /* Project object */;
+	rootObject = AFB6411E307EC60E000474D3 /* Project object */;
 }
