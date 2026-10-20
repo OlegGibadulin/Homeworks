@@ -1,27 +1,27 @@
 import Foundation
 
 enum TaskCategory: String{
-    case work = "Work"
-    case study = "Study"
-    case personal = "Chill"
+    case work = "👩‍💻Work"
+    case study = "📚Study"
+    case personal = "🏂Chill"
 }
 
 struct Task: Identifiable{
     let id : UUID
-    var title: String
+    let title: String
     var isCompleted: Bool
     let category: TaskCategory
 }
 
 class TaskManager {
-    var Tasks:[Task] = []
-    
-    func AddTask(title: String, category: TaskCategory){
+    fileprivate var Tasks:[Task] = []
+     
+    func AddTask(_ title: String, _ category: TaskCategory){
         let NewTask = Task(id: UUID(), title: title, isCompleted: false, category: category)
         Tasks.append(NewTask)
     }
     
-    func RemoveTask(id: UUID){
+    func RemoveTask(_ id: UUID){
         if Tasks.contains(where: {task in task.id == id}){
             Tasks.removeAll(where: {$0.id == id})
         }
@@ -29,8 +29,8 @@ class TaskManager {
             print("Can't find task with this id")
         }
     }
-    
-    func toggleTaskCompletion(by id: UUID){
+
+    func toggleTaskCompletion(_ id: UUID){
         if let index = Tasks.firstIndex(where: {task in task.id == id}){
             Tasks[index].isCompleted.toggle()
         }
@@ -39,29 +39,47 @@ class TaskManager {
         }
     }
     
-    func filterTasks(by category: TaskCategory) -> [Task]{
+    func filterTasks(_ category: TaskCategory) -> [Task]{
         return Tasks.filter{task in (task.category == category && !task.isCompleted)}
     }
 }
 
-    
-    var NewTask1 = Task(id: UUID(), title: "начать читать рэп", isCompleted: false, category: .personal)
-    var NewTask2 = Task(id: UUID(), title: "начать делать курсач", isCompleted: false, category: .study)
-    var NewTask3 = Task(id: UUID(), title: "скинуть отчет работодателю", isCompleted: false, category: .work)
-    var NewTask4 = Task(id: UUID(), title: "стать сварщиком", isCompleted: false, category: .work)
-    let Manager = TaskManager()
-    Manager.Tasks.append(NewTask1)
-    Manager.Tasks.append(NewTask2)
-    Manager.Tasks.append(NewTask3)
-    Manager.Tasks.append(NewTask4)
-    
-Manager.AddTask(title: "стать программистом", category: .study)
-if let a = Manager.Tasks.last{
-    print(a)
+let Manager = TaskManager()
+Manager.AddTask("начать читать рэп", .personal)
+Manager.AddTask("начать делать курсач", .study)
+Manager.AddTask("устроиться на завод", .work)
+Manager.AddTask("стать сварщиком", .work)
+        
+if !Manager.Tasks.isEmpty{
+    Manager.Tasks.forEach {print($0)}
+    print()
 }
-Manager.Tasks.forEach{print($0.title)}
+else{
+    print("Didnt find any tasks")
+}
 print()
-Manager.RemoveTask(id: NewTask1.id)
-Manager.Tasks.forEach{print($0.title)}
+let someTask = Manager.Tasks[0]
+print("Статус до функции toggleTaskCompletion: \(someTask.isCompleted)")
+Manager.toggleTaskCompletion(someTask.id)
+let someTask1 = Manager.Tasks[0]
+print("Статус после функции toggleTaskCompletion: \(someTask1.isCompleted)")
+
+print()
+print("Выведем задачи которые проходят через метод filterTasks по категории в переменной someCategory")
+let someCategory: TaskCategory = .study
+if Manager.Tasks.contains(where: {$0.category == someCategory}){
+    print(Manager.filterTasks(someCategory))
+}
+else{
+    print("Didnt find any tasks")
+}
+
+
+print("Вызовем удаление с несуществующим UUID:", terminator: " ")
+
+let someUUID = UUID()
+Manager.RemoveTask(someUUID)
+
+
 
 
