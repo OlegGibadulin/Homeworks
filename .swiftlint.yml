@@ -1,0 +1,17 @@
+included:
+  - src/task-manager/MyTool
+
+opt_in_rules:
+  - force_unwrapping
+  - empty_count
+  - first_where
+
+identifier_name:
+  excluded: [id, i, x, y]
+
+disabled_rules:
+  - trailing_whitespace
+  - vertical_whitespace
+  - colon
+  - comma
+  - opening_brace

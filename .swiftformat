@@ -1,0 +1,10 @@
+--swiftversion 6.0
+
+--indent 4
+--maxwidth 120
+
+--typedelimiter space-after
+
+--enable preferFinalClasses
+--enable isEmpty
+--enable markTypes
