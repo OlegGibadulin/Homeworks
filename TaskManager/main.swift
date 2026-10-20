@@ -77,3 +77,5 @@ for task in manager.filterTasks(by: .personal) {
 // Удаляем выполненную задачу и проверяем, что список уменьшился.
 manager.removeTask(by: groceries.id)
 print("\nПосле удаления задачи осталось задач: \(manager.allTasks.count)")
+
+
