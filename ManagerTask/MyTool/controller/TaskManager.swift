@@ -21,6 +21,10 @@ class TaskManager {
         tasks.removeAll(where: {$0.id == id})
     }
     
+    func removeAllTask() {
+        tasks.removeAll()
+    }
+    
     func toggleTaskCompletion(by id: UUID) {
         guard let indexTask = tasks.firstIndex(where: {$0.id == id}) else {
             print("Данная задача отсутcтвует😔😔😔")
