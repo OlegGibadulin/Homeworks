@@ -1,4 +1,4 @@
-enum TaskCategory : String {
+enum TaskCategory : String, CaseIterable {
     case work = "💼Работа"
     case study = "📚Учеба"
     case personal = "🗿Личное"

@@ -1,22 +1,23 @@
-//
-//  ContentView.swift
-//  ManagerTaskUI
-//
-//  Created by Ivan Petrischev on 02.11.2026.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    let tasks: [Task] = [
+        Task(
+            id: UUID(),
+            title: "Закончить проект",
+            category: .work,
+        ),
+        Task(
+            id: UUID(),
+            title: "Выучить SwiftUI",
+            category: .study,
+        )
+    ]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "person")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-                .background(Color.black)
-            Text("Hello, world!")
+        List(tasks) { task in
+            TaskRowView(task: task)
         }
-        .padding()
     }
 }
 

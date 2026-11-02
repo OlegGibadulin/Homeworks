@@ -1,7 +1,8 @@
 import Foundation
 
+@Observable
 class TaskManager {
-    private var tasks: [Task]
+    private(set) var tasks: [Task]
     
     init(tasks: [Task]) {
         self.tasks = tasks
