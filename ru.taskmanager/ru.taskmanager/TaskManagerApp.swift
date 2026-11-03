@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ru_taskmanagerApp: App {
+struct TaskManagerApp: App {
     @State
     private var taskManager: TaskManager = {
         let manager = TaskManager()

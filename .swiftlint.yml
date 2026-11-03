@@ -1,5 +1,5 @@
 included:
-  - src/task-manager/MyTool
+  - ru.taskmanager
 
 opt_in_rules:
   - force_unwrapping
