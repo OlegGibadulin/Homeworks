@@ -34,7 +34,7 @@ class TaskManager {
     func toggleTaskCompletion(by id: UUID) {
         if let index = tasks.firstIndex(where: { $0.id == id }) {
             tasks[index].isCompleted.toggle()
-            var status: String
+            let status: String
             if tasks[index].isCompleted {
                 status = "выполнено"
             } else {
@@ -42,7 +42,7 @@ class TaskManager {
             }
             print("статус задачи \"\(tasks[index].title)\" изменен на \(status)")
         } else {
-            print("pадача с таким id не найдена")
+            print("задача с таким id не найдена")
         }
     }
     
@@ -70,8 +70,8 @@ struct TaskRowView: View {
             
             Spacer()
         }
-        .contentShape(Rectangle())
         .padding(.vertical, 4)
+        .contentShape(Rectangle())
     }
 }
 
