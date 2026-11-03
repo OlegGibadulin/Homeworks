@@ -1,5 +1,6 @@
 import Foundation
 
+@Observable
 final class TaskManager {
     private var tasks: [TaskItem] = []
 
@@ -38,5 +39,13 @@ final class TaskManager {
     /// - Returns: Невыполненные задачи указанной категории.
     func filterTasks(by category: TaskCategory) -> [TaskItem] {
         tasks.filter { $0.category == category && !$0.isCompleted }
+    }
+
+    func getTasks(by category: TaskCategory? = nil, isCompleted completed: Bool? = nil) -> [TaskItem] {
+        tasks.filter { task in
+            let matchesCategory = (category == nil || task.category == category)
+            let matchesCompletion = (completed == nil || task.isCompleted == completed)
+            return matchesCategory && matchesCompletion
+        }
     }
 }
