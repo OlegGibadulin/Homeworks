@@ -1,5 +1,3 @@
-// xcode: set sdk=iOS
-
 import SwiftUI
 
 enum TaskCategory: String, CaseIterable {
